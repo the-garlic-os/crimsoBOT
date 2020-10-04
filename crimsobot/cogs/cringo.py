@@ -57,7 +57,7 @@ class Cringo(commands.Cog):
     async def cringo_main(self, ctx: CrimsoContext, card_size: int = 4) -> None:
         # generate game intro embed
         embed = c.crimbed(
-            title="Let's play **{}CRINGO!**".format(CRINGO_RULES['name'][card_size]),
+            title="Let's play {}CRINGO!".format(CRINGO_RULES['name'][card_size]),
             descr='\n'.join([
                 'Click {} to join this game. You have {} seconds!'
                 .format(CRINGO_RULES['emoji'], CRINGO_RULES['join_timer']),
